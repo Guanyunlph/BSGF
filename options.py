@@ -15,29 +15,21 @@ class Options(object):
 
         self.parser.add_argument('--network_id', type=int, default=999)
 
-        # self.parser.add_argument('--data', type=str, default='camcan-movie', help='')
-        # self.parser.add_argument('--d_subj_num', type=int, default=563, help='')
-        # self.parser.add_argument('--seq_len', type=int, default=188, help='')  
-
         self.parser.add_argument('--data', type=str, default='camcan-rest', help='')
         self.parser.add_argument('--d_subj_num', type=int, default=595, help='')
         self.parser.add_argument('--seq_len', type=int, default=256, help='')  
 
-        # self.parser.add_argument('--data', type=str, default='nki', help='')
-        # self.parser.add_argument('--d_subj_num', type=int, default=1137, help='')
-        # self.parser.add_argument('--seq_len', type=int, default=115, help='')  
 
         # model define
         self.parser.add_argument('--d_output_root', default='./resultAA', help='')
         self.parser.add_argument('--enc_in', type=int, default=264, help='encoder input size') 
         
-        
-        
+         
         self.parser.add_argument('--D', type=int, default=8)
-        self.parser.add_argument('--K1', type=int, default=3)
-        self.parser.add_argument('--S', type=int, default=3)
-        self.parser.add_argument('--K2', type=int, default=3)
-        self.parser.add_argument('--K3', type=int, default=3)
+        self.parser.add_argument('--K1', type=int, default=5)
+        self.parser.add_argument('--S', type=int, default=5)
+        self.parser.add_argument('--K2', type=int, default=7)
+        self.parser.add_argument('--K3', type=int, default=7)
         self.parser.add_argument('--K4', type=int, default=3)
        
         self.parser.add_argument('--num_layers', type=int, default=6)
